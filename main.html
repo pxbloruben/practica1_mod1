@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Mi BLOG PERSONAL</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacto">
+            <h2>Formularo de contacto</h2>
+            <p>Rellena el formulario para contactarnos</p>
+            <!-- Formulario de contacto -->
+             <form>
+                <!-- Laber es una etiqueda que nos sirve para asociar un elemento de entrada
+                 el atriburo for d -->
+                 <label for="nombre">Nombre:</label>
+                 <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+                 <label for="email">Correo electronico:</label>
+                 <input type="email" id="email" placeholder="ejemplo@ejemplo" required>
+
+                 <label for="asunto">Asunto: </label>
+                 <select  id="asunto">
+                     <option value="general">General</option>
+                     <option value="comentarios">Comentarios</option>
+                     <option value="reclamos">Reclamos</option>
+                     <option value="sugerencias">Sugerencias</option>
+                     <option value="otros">Otros</option>
+                 </select>
+
+                 <label for="mensaje">Mensaje:</label>
+                 <textarea id="mensaje" role="5" placeholder="Escribe tu mensaje" required></textarea>
+                    <!-- El fieldset nos sirve para agrupar elementos de un formulario relacionado
+                     facilita la comprension y navegacion en el formulario especialmente para usuarios 
+                     con leectores de pantalla -->
+                 <fieldset> 
+                    <!-- El legend nos sirve para agregar un titulo al fieldset -->
+                    <legend> Género: </legend>
+                    <label for="masculino">masculino</label>
+                    <input type="radio" name ="genero" id="masculino">
+
+                    <label for="femenino">femenino</label>
+                    <input type="radio" name="genero" id="femenino">
+
+                    <label for="otro">Otro</label>
+                    <input type="radio" name="genero" id="otro">
+                 </fieldset>
+
+                 <fieldset>
+                    <legend>Intereses</legend>
+
+                    <label for="desarrollo-web">Desarrollo Web</label>
+                    <input type="checkbox" name="intereses" id="desarrollo-web">
+                    
+                    <label for="Cocinar">Cocinar</label>
+                    <input type="checkbox" name="Cocinar" id="Cocinar">
+                 </fieldset>
+                 
+                 <button type="submit">Enviar</button>
+               
+             </form>
+        </section>
+    </main>
+</body>
+</html>
